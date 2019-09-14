@@ -11,15 +11,18 @@ class Polynomial {
 
 private:
 	//Necesitamos el coeficiente y el exponente
-	int coeficiente, exponente;
+	int coeficiente, exponente, cantidad;
+	int* list;
 
 	//Necesitamos un vector donde almacenar los coeficientes y las variables
 
 public:
+	
+
 	//Crear un método que tome como parámetro el vector y lo inicialice.
 	//En el mismo método, encontrar la forma que imprima el vector utilizando '+'
 	//Distinguir los coeficientes y los exponentes dentro del vector
-	void add();
+	void add(int* list, int cantidad,  int coeficiente, int exponente);
 
 
 	//Crear un método que permita almacenar otro polinomio
